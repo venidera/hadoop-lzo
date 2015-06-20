@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/app":{"create":true,"guestpath":"/home/vagrant/app","hostpath":"/Users/andre/git/venidera-barrel-node","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/andre/git/venidera-barrel-node","disabled":false}}}
