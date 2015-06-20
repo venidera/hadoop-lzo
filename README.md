@@ -1,5 +1,6 @@
 # hadoop-lzo
 A refactory from https://github.com/cloudera/hadoop-lzo to solve build problems.
+The main difference from the source repository is the adjustment proposed in the issue response from https://github.com/twitter/hadoop-lzo/issues/35 
 
 ## Adding LZO compress support to Hbase
 The reference for the info below and troubleshooting is http://opentsdb.net/setup-hbase.html
