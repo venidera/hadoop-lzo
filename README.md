@@ -13,7 +13,23 @@ brew install lzo # Mac OS X
 ```
 
 ### Compile & Deploy
+Here an example to add LZO support in hbase:
 ```
+wget http://www.eu.apache.org/dist/hbase/stable/hbase-1.0.1.1-bin.tar.gz
+tar xvf hbase-1.0.1.1-bin.tar.gz
+ln -s hbase-1.0.1.1 hbase
+
+cat >conf/hbase-site.xml <<EOF
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?> 
+<configuration> 
+  <property> 
+    <name>hbase.rootdir</name> 
+    <value>file:////tmp/hbase</value> 
+  </property>
+</configuration> 
+EOF
+
 git clone git://github.com/venidera/hadoop-lzo.git
 export HBASE_HOME=/path/to/hbase
 cd hadoop-lzo
