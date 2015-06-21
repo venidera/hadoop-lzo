@@ -13,7 +13,7 @@ brew install lzo # Mac OS X
 ```
 
 ### Compile & Deploy
-Here an example to add LZO support in hbase(in Ubuntu using Oracle Java 7):
+Here an example to add LZO support in HBase (Ubuntu with Oracle Java 7):
 ```
 wget http://www.eu.apache.org/dist/hbase/stable/hbase-1.0.1.1-bin.tar.gz
 tar xzf hbase-1.0.1.1-bin.tar.gz
@@ -40,7 +40,7 @@ cd ..
 $HBASE_HOME/bin/start-hbase.sh
 $HBASE_HOME/bin/hbase shell
 ```
-Now, in HBase shell you can define compression as LZO. Example:
+To use LZO you must define the compression in the create table statement. See the example below:
 ```
 hbase(main):001:0> create 'Table1', {NAME => 'Column1',COMPRESSION=>'LZO'}
 0 row(s) in 0.1750 seconds
